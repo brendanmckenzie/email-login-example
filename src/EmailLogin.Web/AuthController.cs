@@ -1,6 +1,5 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
+using EmailLogin.Web.Models;
 
 namespace EmailLogin.Web
 {
@@ -59,41 +58,11 @@ namespace EmailLogin.Web
             }
             else
             {
-                return new VerifyResponse { Errors = new [] { "Invalid authentication token" } };
+                return new VerifyResponse
+                {
+                    Errors = new [] { "Invalid authentication token" }
+                };
             }
         }
-    }
-
-    public abstract class BaseRespose
-    {
-        public bool Success { get { return Errors == null; } }
-
-        public IEnumerable<string> Errors { get; set; }
-    }
-
-    public class ChallengeRequest
-    {
-        public string Email { get; set; }
-        public string PublicKey { get; set; }
-    }
-
-    public class ChallengeResponse : BaseRespose
-    {
-        public string PublicKey { get; set; }
-
-        public string Token { get; set; }
-        public Guid Id { get; set; }
-    }
-
-    public class VerifyRequest
-    {
-        public Guid Id { get; set; }
-        public string Token { get; set; }
-
-    }
-
-    public class VerifyResponse : BaseRespose
-    {
-
     }
 }
