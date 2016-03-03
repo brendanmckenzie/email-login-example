@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [
+    "Brendan McKenzie"
+  ],
+  "tags": [
+    "security",
+    "example"
+  ],
+  "projectUrl": "https://github.com/brendanmckenzie/email-login-example",
+  "licenseUrl": "",
+  "dependencies": {
+    "EmailLogin": "1.0.0-*"
+   },
+  "frameworks": {
+    "dotnet": { }
+  }
+}

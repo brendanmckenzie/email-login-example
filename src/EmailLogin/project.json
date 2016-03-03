@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [
+    "Brendan McKenzie"
+  ],
+  "tags": [
+    "security"
+  ],
+  "projectUrl": "https://github.com/brendanmckenzie/blog-dmsystem",
+  "licenseUrl": "",
+  "dependencies": {
+    "System.Runtime": "1.0.0-rc2-23811",
+    "System.Runtime.Extensions": "4.1.0-rc2-23811"
+  },
+  "frameworks": {
+    "dnxcore50": {}
+  }
+}
